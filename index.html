@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="th">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>M3 Graduation</title>
+    <link rel="stylesheet" href="goodbey.css">
+</head>
+
+<body>
+
+    <div class="progress" id="progressBar"></div>
+
+    <div class="container">
+
+        <!-- PAGE 1 -->
+        <div class="page active" id="page1">
+            <h1>🎓 Congratulations</h1>
+            <p>วันนี้คือวันสุดท้ายของ ม.3 อย่างเป็นทางการ</p>
+            <button onclick="changePage(2)">Next →</button>
+        </div>
+
+        <!-- PAGE 2 -->
+        <div class="page" id="page2">
+            <h1>Memories</h1>
+            <div class="gallery">
+                <div class="gallery-item">
+                    <img src="https://image2url.com/r2/default/images/1771513785008-49687de4-9799-4126-8f52-886c998239f4.jpg">
+                    <div class="year-label">M.1</div>
+                    <div class="year-desc">ปีแห่งการเริ่มต้น 💫</div>
+                </div>
+
+                <div class="gallery-item">
+                    <img src="https://image2url.com/r2/default/images/1771513616234-2f183a3e-343f-424c-adb8-3a95e825eb8d.png">
+                    <div class="year-label">M.2</div>
+                    <div class="year-desc">ปีแห่งความบ้าและเสียงหัวเราะ 😆</div>
+                </div>
+
+                <div class="gallery-item">
+                    <img src="https://image2url.com/r2/default/images/1771513818557-55cdd64c-2c4c-4a6f-9348-e5dba06c6ad9.jpg">
+                    <div class="year-label">M.3</div>
+                    <div class="year-desc">ปีแห่งความทรงจำที่ไม่มีวันลืม 💚 </div>
+                </div>
+            </div>
+
+            <br>
+            <button onclick="changePage(1)">← Back</button>
+            <button onclick="changePage(3)">Next →</button>
+        </div>
+
+        <footer>
+            © 2026 | CR. poom
+        </footer>
+
+
+        <!-- PAGE 3 -->
+        <div class="page" id="page3">
+            <h1>Farewell Letter</h1>
+            <p id="letter"></p>
+            <br>
+
+            <a href="https://docs.google.com/forms/d/e/1FAIpQLSfgaNAlfU2_SZjzLxRwCX65uQ0Zml7xsBtw5J_nYJNURjmOVA/viewform?usp=publish-editor" target="_blank">
+                <button>ส่งข้อความถึงใครซักคน</button>
+            </a>
+
+            <br>
+            <button onclick="changePage(2)">← Back</button>
+        </div>
+
+    </div>
+
+    <script src="nah.js"></script>
+</body>
+
+</html>
