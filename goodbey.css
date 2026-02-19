@@ -27,28 +27,20 @@ body {
 .container {
     width: 100%;
     min-height: 100vh;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    position: relative;
-    padding: 40px 0;
+    padding: 60px 15px;
 }
 
 .page {
-    position: absolute;
-    width: 92%;
+    display: none;
+    width: 100%;
     max-width: 900px;
+    margin: 0 auto;
     text-align: center;
-    opacity: 0;
-    transform: translateX(40px);
-    transition: .5s ease;
-    pointer-events: none;
+    padding: 20px;
 }
 
 .page.active {
-    opacity: 1;
-    transform: translateX(0);
-    pointer-events: auto;
+    display: block;
 }
 
 h1 {
@@ -97,17 +89,11 @@ button:hover {
     text-align: center;
 }
 
-
-/* 🔥 แก้ตรงนี้ให้เห็นรูปเต็ม */
-
 .gallery img {
     width: 100%;
     max-width: 320px;
-    /* ลดนิดนึงให้พอดีมือถือ */
     height: auto;
-    /* สำคัญมาก */
     border-radius: 20px;
-    transition: .3s;
 }
 
 .gallery img:hover {
